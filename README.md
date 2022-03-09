@@ -7,7 +7,7 @@ IOS Templeate Inventory
 [Basic IOS Practice](https://github.com/tcJunghunPark/ProjectBasedIOS)
 
 # Intermediate
-## Spotfy
+## Spotfy style login page
 - login
 
 # Advanced
