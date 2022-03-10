@@ -11,7 +11,6 @@
         <!--Navigation Controller-->
         <scene sceneID="YIh-eZ-bqz">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tPR-XW-aw0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="UTb-u7-u5E" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7rc-XH-cwz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -21,6 +20,7 @@
                         <segue destination="lSQ-7V-AhY" kind="relationship" relationship="rootViewController" id="VZG-yr-Hf2"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tPR-XW-aw0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-325" y="76"/>
         </scene>
@@ -236,7 +236,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0v-lq-JtN">
-                                <rect key="frame" x="175.5" y="483" width="63" height="34"/>
+                                <rect key="frame" x="175.5" y="533" width="63" height="34"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="로그아웃">
@@ -246,17 +246,30 @@
                                     <action selector="logoutButtonTapped:" destination="9v7-f4-wYt" eventType="touchUpInside" id="8RF-1i-LC7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8W5-j1-SIL">
+                                <rect key="frame" x="166" y="483" width="82" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="비밀번호 변경">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetPasswordButtonTapped:" destination="9v7-f4-wYt" eventType="touchUpInside" id="nXa-7M-vGL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gsU-S7-qnI"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="M0v-lq-JtN" firstAttribute="top" secondItem="d9Z-Hg-ooJ" secondAttribute="bottom" constant="20" id="BaP-5r-mI0"/>
+                            <constraint firstItem="8W5-j1-SIL" firstAttribute="top" secondItem="d9Z-Hg-ooJ" secondAttribute="bottom" constant="20" id="BqV-45-coi"/>
                             <constraint firstItem="d9Z-Hg-ooJ" firstAttribute="centerX" secondItem="vFg-Az-oMx" secondAttribute="centerX" id="bEj-km-gt8"/>
                             <constraint firstItem="d9Z-Hg-ooJ" firstAttribute="centerY" secondItem="vFg-Az-oMx" secondAttribute="centerY" id="bNA-Kb-R4L"/>
+                            <constraint firstItem="8W5-j1-SIL" firstAttribute="centerX" secondItem="vFg-Az-oMx" secondAttribute="centerX" id="kUP-eF-sCG"/>
+                            <constraint firstItem="M0v-lq-JtN" firstAttribute="top" secondItem="8W5-j1-SIL" secondAttribute="bottom" constant="20" id="lhU-nY-haE"/>
                             <constraint firstItem="M0v-lq-JtN" firstAttribute="centerX" secondItem="vFg-Az-oMx" secondAttribute="centerX" id="tgW-zs-vFW"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="resetpasswordButton" destination="8W5-j1-SIL" id="eq7-oX-MvU"/>
                         <outlet property="welcomeLabel" destination="d9Z-Hg-ooJ" id="32k-Jd-Si2"/>
                     </connections>
                 </viewController>
