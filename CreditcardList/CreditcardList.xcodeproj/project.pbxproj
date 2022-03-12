@@ -19,6 +19,7 @@
 		A7795E0327DB340F005D29AA /* CardListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7795E0127DB340F005D29AA /* CardListCell.xib */; };
 		A7795E0527DB3A1F005D29AA /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7795E0427DB3A1F005D29AA /* CardDetailViewController.swift */; };
 		A7795E0827DB3F4A005D29AA /* money.json in Resources */ = {isa = PBXBuildFile; fileRef = A7795E0727DB3F4A005D29AA /* money.json */; };
+		A7795E0A27DC8CE5005D29AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7795E0927DC8CE5005D29AA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		A7795E0127DB340F005D29AA /* CardListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardListCell.xib; sourceTree = "<group>"; };
 		A7795E0427DB3A1F005D29AA /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
 		A7795E0727DB3F4A005D29AA /* money.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = money.json; sourceTree = SOURCE_ROOT; };
+		A7795E0927DC8CE5005D29AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				A7795E0127DB340F005D29AA /* CardListCell.xib */,
 				A7795DEC27DB31EF005D29AA /* Main.storyboard */,
 				A7795DEF27DB31F0005D29AA /* Assets.xcassets */,
+				A7795E0927DC8CE5005D29AA /* GoogleService-Info.plist */,
 				A7795DF127DB31F0005D29AA /* LaunchScreen.storyboard */,
 				A7795DF427DB31F0005D29AA /* Info.plist */,
 			);
@@ -167,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7795DF327DB31F0005D29AA /* LaunchScreen.storyboard in Resources */,
+				A7795E0A27DC8CE5005D29AA /* GoogleService-Info.plist in Resources */,
 				A7795DF027DB31F0005D29AA /* Assets.xcassets in Resources */,
 				A7795E0827DB3F4A005D29AA /* money.json in Resources */,
 				A7795DEE27DB31EF005D29AA /* Main.storyboard in Resources */,
