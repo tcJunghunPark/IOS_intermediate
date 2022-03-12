@@ -102,8 +102,8 @@
 				A7795E0127DB340F005D29AA /* CardListCell.xib */,
 				A7795DEC27DB31EF005D29AA /* Main.storyboard */,
 				A7795DEF27DB31F0005D29AA /* Assets.xcassets */,
-				A7795E0927DC8CE5005D29AA /* GoogleService-Info.plist */,
 				A7795DF127DB31F0005D29AA /* LaunchScreen.storyboard */,
+				A7795E0927DC8CE5005D29AA /* GoogleService-Info.plist */,
 				A7795DF427DB31F0005D29AA /* Info.plist */,
 			);
 			path = CreditcardList;

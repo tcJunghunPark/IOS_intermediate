@@ -22,5 +22,5 @@ struct PromotionDetail:Codable{
     let condition: String
     let benefitCondition : String
     let benefitDetail: String
-    let benefitData : String
+    let benefitDate : String
 }

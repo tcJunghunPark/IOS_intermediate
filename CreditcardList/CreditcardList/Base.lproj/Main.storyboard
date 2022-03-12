@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dFd-O7-QTU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -165,7 +165,7 @@
                     <connections>
                         <outlet property="benefitConditionLabel" destination="2N5-kI-3eD" id="T2Q-Mn-iUq"/>
                         <outlet property="benefitDateLabel" destination="MzQ-8l-J1E" id="HcB-X1-UII"/>
-                        <outlet property="benefitDetailLabel" destination="P0Z-uV-qev" id="6lq-sw-lBX"/>
+                        <outlet property="benefitDetailLabel" destination="P0Z-uV-qev" id="fXf-vv-Blj"/>
                         <outlet property="conditionLabel" destination="iMH-ir-SNY" id="9Dm-Yt-hjE"/>
                         <outlet property="lottieView" destination="55s-3p-h2w" id="T4m-We-E42"/>
                         <outlet property="periodLabel" destination="aEv-EP-WI5" id="vP6-nN-idd"/>
