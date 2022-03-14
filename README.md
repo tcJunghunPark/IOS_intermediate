@@ -44,5 +44,7 @@ IOS Templeate Inventory
     - NotificationCenter에 추가
 - 알림 시간을 통해 물마시기 알람 보냄
 
+
+<img src="https://user-images.githubusercontent.com/54619996/158180809-9f953787-248c-4e0b-bd0e-c34fe11db110.gif" width="300">
     
 # Advanced
