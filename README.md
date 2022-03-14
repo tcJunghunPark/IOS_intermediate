@@ -16,7 +16,7 @@ IOS Templeate Inventory
 
 <img src="https://user-images.githubusercontent.com/54619996/158113751-1ebb55fb-a81c-4a71-9f12-1965b16aa0b0.gif" width="300">
 
-## Card Recommand List
+## Card Recommend List
 - Firebase realtime database
 - Firestore database
 
