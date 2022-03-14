@@ -10,8 +10,9 @@ import Foundation
 
 struct Alert: Codable {
     var id: String = UUID().uuidString
-    var date: Date
+    let date: Date
     var isOn: Bool
+    
     var time : String {
         let timeFormatter = DateFormatter()
         timeFormatter.dateFormat = "hh:mm"

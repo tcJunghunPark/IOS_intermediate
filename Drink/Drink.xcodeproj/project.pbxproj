@@ -17,6 +17,7 @@
 		A7795E5A27DF33B9005D29AA /* AlertListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7795E5827DF33B9005D29AA /* AlertListCell.xib */; };
 		A7795E5C27DF3539005D29AA /* alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7795E5B27DF3539005D29AA /* alert.swift */; };
 		A7795E5E27DF37C3005D29AA /* AddAlertViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7795E5D27DF37C3005D29AA /* AddAlertViewViewController.swift */; };
+		A7795E6027DF6D84005D29AA /* UNNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7795E5F27DF6D84005D29AA /* UNNotificationCenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		A7795E5827DF33B9005D29AA /* AlertListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertListCell.xib; sourceTree = "<group>"; };
 		A7795E5B27DF3539005D29AA /* alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alert.swift; sourceTree = "<group>"; };
 		A7795E5D27DF37C3005D29AA /* AddAlertViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlertViewViewController.swift; sourceTree = "<group>"; };
+		A7795E5F27DF6D84005D29AA /* UNNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNNotificationCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +68,13 @@
 			children = (
 				A7795E4127DF3284005D29AA /* AppDelegate.swift */,
 				A7795E4327DF3284005D29AA /* SceneDelegate.swift */,
+				A7795E5B27DF3539005D29AA /* alert.swift */,
+				A7795E5527DF32AC005D29AA /* AlertListViewController.swift */,
+				A7795E5F27DF6D84005D29AA /* UNNotificationCenter.swift */,
 				A7795E5D27DF37C3005D29AA /* AddAlertViewViewController.swift */,
 				A7795E5727DF33B9005D29AA /* AlertListCell.swift */,
 				A7795E5827DF33B9005D29AA /* AlertListCell.xib */,
-				A7795E5527DF32AC005D29AA /* AlertListViewController.swift */,
 				A7795E4727DF3284005D29AA /* Main.storyboard */,
-				A7795E5B27DF3539005D29AA /* alert.swift */,
 				A7795E4A27DF3285005D29AA /* Assets.xcassets */,
 				A7795E4C27DF3285005D29AA /* LaunchScreen.storyboard */,
 				A7795E4F27DF3285005D29AA /* Info.plist */,
@@ -156,6 +159,7 @@
 				A7795E5927DF33B9005D29AA /* AlertListCell.swift in Sources */,
 				A7795E5C27DF3539005D29AA /* alert.swift in Sources */,
 				A7795E5E27DF37C3005D29AA /* AddAlertViewViewController.swift in Sources */,
+				A7795E6027DF6D84005D29AA /* UNNotificationCenter.swift in Sources */,
 				A7795E5627DF32AC005D29AA /* AlertListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

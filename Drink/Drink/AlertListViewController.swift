@@ -6,18 +6,28 @@
 //
 
 import UIKit
+import UserNotifications
 
 class AlertListViewController: UITableViewController {
     var alerts: [Alert] = []
+    let userNotificationCenter = UNUserNotificationCenter.current()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let nibName = UINib(nibName: "AlertListCell", bundle: nil)
-        tableView.register(nibName, forCellReuseIdentifier: "AlertListCell")
+        //UITableView
+        tableView.register(UINib(nibName: "AlertListCell", bundle: nil), forCellReuseIdentifier: "AlertListCell")
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        alerts = alertList()
+        self.alerts = alertList()
+    }
+    
+    
+    func alertList() -> [Alert] {
+        guard let data = UserDefaults.standard.value(forKey: "alerts") as? Data,
+              let alerts = try? PropertyListDecoder().decode([Alert].self, from: data) else {return []}
+        return alerts
     }
 
     @IBAction func addAlertButtonAction(_ sender: UIBarButtonItem) {
@@ -33,16 +43,14 @@ class AlertListViewController: UITableViewController {
             
             self.alerts = alertList
             UserDefaults.standard.set(try? PropertyListEncoder().encode(self.alerts), forKey: "alerts")
+            self.userNotificationCenter.addNotificationRequest(by: newAlert)
+            
             self.tableView.reloadData()
             
         }
         self.present(addAlertVC, animated: true, completion:  nil)
     }
-    func alertList() -> [Alert] {
-        guard let data = UserDefaults.standard.value(forKey: "alert") as? Data,
-              let alerts = try? PropertyListDecoder().decode([Alert].self, from: data) else {return []}
-        return alerts
-    }
+    
 }
 
 //UITableVuew Datasource, Delegate
@@ -80,6 +88,7 @@ extension AlertListViewController {
         case .delete:
             self.alerts.remove(at: indexPath.row)
             UserDefaults.standard.set(try? PropertyListEncoder().encode(self.alerts), forKey: "alerts")
+            userNotificationCenter.removePendingNotificationRequests(withIdentifiers: [alerts[indexPath.row].id])
             self.tableView.reloadData()
         return
 
