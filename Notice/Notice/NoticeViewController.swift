@@ -8,22 +8,33 @@
 import UIKit
 
 class NoticeViewController: UIViewController {
-
+    var noticeContents: (title: String, detail: String, date: String)?
+    
+    @IBOutlet var noticeView: UIView!
+    
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var detailLabel: UILabel!
+    @IBOutlet var dateLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        noticeView.layer.cornerRadius = 6
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        guard let noticeContents = noticeContents else {
+            return
+        }
+        titleLabel.text = noticeContents.title
+        detailLabel.text = noticeContents.detail
+        dateLabel.text =   noticeContents.date
+        
+        
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func doneButtonTapped(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
-    */
-
 }
