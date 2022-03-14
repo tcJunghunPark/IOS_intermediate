@@ -20,6 +20,7 @@
 		A7795E0527DB3A1F005D29AA /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7795E0427DB3A1F005D29AA /* CardDetailViewController.swift */; };
 		A7795E0827DB3F4A005D29AA /* money.json in Resources */ = {isa = PBXBuildFile; fileRef = A7795E0727DB3F4A005D29AA /* money.json */; };
 		A7795E0A27DC8CE5005D29AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7795E0927DC8CE5005D29AA /* GoogleService-Info.plist */; };
+		A7795E0C27DEDEF9005D29AA /* CreditCardDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7795E0B27DEDEF9005D29AA /* CreditCardDummy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		A7795E0427DB3A1F005D29AA /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
 		A7795E0727DB3F4A005D29AA /* money.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = money.json; sourceTree = SOURCE_ROOT; };
 		A7795E0927DC8CE5005D29AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A7795E0B27DEDEF9005D29AA /* CreditCardDummy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardDummy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				A7795E0727DB3F4A005D29AA /* money.json */,
 				A7795E0427DB3A1F005D29AA /* CardDetailViewController.swift */,
 				A7795E0027DB340F005D29AA /* CardListCell.swift */,
+				A7795E0B27DEDEF9005D29AA /* CreditCardDummy.swift */,
 				A7795E0127DB340F005D29AA /* CardListCell.xib */,
 				A7795DEC27DB31EF005D29AA /* Main.storyboard */,
 				A7795DEF27DB31F0005D29AA /* Assets.xcassets */,
@@ -231,6 +234,7 @@
 				A7795E0527DB3A1F005D29AA /* CardDetailViewController.swift in Sources */,
 				A7795E0227DB340F005D29AA /* CardListCell.swift in Sources */,
 				A7795DFB27DB3203005D29AA /* CardListViewController.swift in Sources */,
+				A7795E0C27DEDEF9005D29AA /* CreditCardDummy.swift in Sources */,
 				A7795DE727DB31EF005D29AA /* AppDelegate.swift in Sources */,
 				A7795DE927DB31EF005D29AA /* SceneDelegate.swift in Sources */,
 			);
