@@ -34,4 +34,15 @@ IOS Templeate Inventory
 |test A|test B|
 |:-:|:-:|
 |![test A](https://user-images.githubusercontent.com/54619996/158128026-62c98e55-2b51-49a5-b4d9-50f8940dc4e4.png?w=200)|![test B](https://user-images.githubusercontent.com/54619996/158128038-d2ba9afd-56c7-4b0d-8da7-37a317a71b8b.png?w=200)|
+
+## 물마시기 알람 앱 
+- local notification 사용법
+    - UNNotificationRequest (UN: User Notification)
+        - identifier (ex: uuid)
+        - content
+        - trigger (calendar, timeInterval, location)
+    - NotificationCenter에 추가
+- 알림 시간을 통해 물마시기 알람 보냄
+
+    
 # Advanced
