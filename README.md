@@ -47,4 +47,10 @@ IOS Templeate Inventory
 
 <img src="https://user-images.githubusercontent.com/54619996/158180809-9f953787-248c-4e0b-bd0e-c34fe11db110.gif" width="300">
     
+
+## 재난문자 푸쉬알림 구현
+- APN
+- Firebase Cloud Messaging
+
+
 # Advanced
