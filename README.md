@@ -55,4 +55,11 @@ IOS Templeate Inventory
 
 <img src="https://user-images.githubusercontent.com/54619996/158374246-e99b037f-2372-42b7-ac61-5746a21a9105.gif" width="300">
 
+## netflix 스타일 다이나믹 레이아웃 구성
+- UICollectionView 활용
+- storyboard 없이 UI구성하기
+
+
+<img src="https://user-images.githubusercontent.com/54619996/159485136-57604f8b-117c-4e2a-972d-0f33c5c6f564.gif" width="300">
+
 # Advanced
