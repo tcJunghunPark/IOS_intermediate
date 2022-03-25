@@ -14,7 +14,7 @@ class BeerDetailViewController : UITableViewController {
         
         title = beer?.name ?? "이름 없는 맥주"
         tableView = UITableView(frame: tableView.frame, style: .insetGrouped)
-        tableView.register(UITableViewController.self,  forCellReuseIdentifier: "BeerDetailListCell")
+        tableView.register(UITableViewCell.self,  forCellReuseIdentifier: "BeerDetailListCell")
         tableView.rowHeight = UITableView.automaticDimension
         
         let frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 300)
@@ -63,7 +63,7 @@ extension BeerDetailViewController {
         
         switch indexPath.section {
         case 0:
-            cell.textLabel?.text = String(description: beer?.id ?? 0)
+            cell.textLabel?.text = String(describing: beer?.id ?? 0)
             return cell
         case 1:
             cell.textLabel?.text = beer?.description ?? "설명 없는 맥주"
