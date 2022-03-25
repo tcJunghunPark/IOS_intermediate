@@ -10,6 +10,7 @@ import CoreMedia
 
 class BeerListViewController: UITableViewController {
     var beerList = [Beer]()
+    var dataTasks = [URLSessionTask]()
     var currentPage = 1
     
     override func viewDidLoad() {
@@ -22,6 +23,7 @@ class BeerListViewController: UITableViewController {
         //UITableView 설정
         tableView.register(BeerListCell.self, forCellReuseIdentifier: "BeerListCell")
         tableView.rowHeight = 150
+        tableView.prefetchDataSource = self
         
         fetchBeer(of: currentPage)
         
@@ -30,12 +32,14 @@ class BeerListViewController: UITableViewController {
 }
 
 //UITableView Datasource, Delegate
-extension BeerListViewController {
+extension BeerListViewController: UITableViewDataSourcePrefetching {
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return beerList.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("Rows: \(indexPath.row)")
         let cell = tableView.dequeueReusableCell(withIdentifier: "BeerListCell", for: indexPath) as! BeerListCell
 //        guard let cell = tableView.dequeueReusableCell(withIdentifier: "BeerListCell", for: indexPath) as? BeerListCell else {return UITableViewCell()}
                 
@@ -51,11 +55,24 @@ extension BeerListViewController {
         detailViewController.beer = selectedBeer
         self.show(detailViewController, sender: nil)
     }
+    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+        guard currentPage != 1 else {return}
+        
+        indexPaths.forEach {
+            if ($0.row + 1)/25 + 1 == currentPage {
+                self.fetchBeer(of: currentPage)
+            }
+        }
+        
+    }
+    
 }
 //Data fetching
 private extension BeerListViewController {
     func fetchBeer(of page: Int) {
-        guard let url = URL(string: "https://api.punkapi.com/v2/beers?page=\(page)") else {return}
+        guard let url = URL(string: "https://api.punkapi.com/v2/beers?page=\(page)"),
+        dataTasks.firstIndex(where: { $0.originalRequest?.url == url
+        }) == nil else {return}
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         
@@ -94,5 +111,6 @@ private extension BeerListViewController {
             }
         }
         dataTask.resume()
+        dataTasks.append(dataTask)
     }
 }
